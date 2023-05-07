@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: This is Ping - Blog
+eleventyImport:
+  collections: ["blog"]
+---
+
+<div class="blog-list">
+  {%- for blog in collections.blog -%}
+  <div class="blog-item">
+    <div class="blog-item-title">
+      <a href={{ "/" + blog.data.permalink}}>{{ blog.data.title }}</a>
+    </div>
+    <div class="blog-item-date">
+      {{ blog.data.createdAt }}
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
