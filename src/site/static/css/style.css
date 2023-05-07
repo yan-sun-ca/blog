@@ -10,7 +10,8 @@ li {
     list-style: none;
 }
 
-main p,ul {
+main p,
+ul {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
@@ -40,7 +41,7 @@ header a {
     color: #2f4858;
     font-weight: 700;
     display: block;
-        padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 header ul li {
@@ -114,7 +115,7 @@ footer {
 
 .demo-content {
     padding: 0.5rem 1rem;
-    background-color: #b3c5d7;
+    background-color: #edf1f4;
 }
 
 .demo-content:last-child {
@@ -152,7 +153,9 @@ footer {
     padding-bottom: 0.5rem;
 }
 
-.single-page h3,h4,h5 {
+.single-page h3,
+h4,
+h5 {
     color: #2f4858;
     margin-bottom: 0.5rem;
 }
@@ -184,9 +187,9 @@ footer {
 
 @media screen and (min-width: 600px) {
     .container {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0 10%;
-        }
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0 10%;
+    }
 }
