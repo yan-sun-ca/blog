@@ -18,6 +18,8 @@ Initially, the value of X is 0.
 
 Given an array of strings operations containing a list of operations, return the final value of X after performing all the operations.
 
+<p>&nbsp;</p>
+
 **Example 1:**
 
     Input: operations = ["--X","X++","X++"]
@@ -27,6 +29,8 @@ Given an array of strings operations containing a list of operations, return the
     --X: X is decremented by 1, X =  0 - 1 = -1.
     X++: X is incremented by 1, X = -1 + 1 =  0.
     X++: X is incremented by 1, X =  0 + 1 =  1.
+
+<p>&nbsp;</p>
 
 **Example 2:**
 
@@ -38,6 +42,8 @@ Given an array of strings operations containing a list of operations, return the
     ++X: X is incremented by 1, X = 1 + 1 = 2.
     X++: X is incremented by 1, X = 2 + 1 = 3.
 
+<p>&nbsp;</p>
+
 **Example 3:**
     Input: operations = ["X++","++X","--X","X--"]
     Output: 0
@@ -48,25 +54,31 @@ Given an array of strings operations containing a list of operations, return the
     --X: X is decremented by 1, X = 2 - 1 = 1.
     X--: X is decremented by 1, X = 1 - 1 = 0.
 
+<p>&nbsp;</p>
+
 **Constraints:**
 
 
     * 1 <= operations.length <= 100
     * operations[i] will be either "++X", "X++", "--X", or "X--".
 
+<p>&nbsp;</p>
 
 ---
-  
 
-<p>&nbsp;</p>
 
 #### Solution
 **Python**
 ```Python
 class Solution:
-    def defangIPaddr(self, address: str) -> str:
-        newip = address.replace(".","[.]")
-        return newip
+    def finalValueAfterOperations(self, operations: List[str]) -> int:
+        value = 0
+        for i in range(0,len(operations)):
+            if operations[i] == "++X" or operations[i] == "X++":
+                value += 1
+            elif operations[i] == "--X" or operations[i] == "X--":
+                value -= 1
+        return value
 ```
 
 **Java**
