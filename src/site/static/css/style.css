@@ -47,7 +47,7 @@ header a {
 header ul li {
 
     margin-right: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     border-bottom: #2f4858 3px solid;
 }
@@ -172,7 +172,7 @@ h5 {
 }
 
 .blog-item-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .blog-item-title a {
