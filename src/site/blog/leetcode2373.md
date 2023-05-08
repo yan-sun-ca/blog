@@ -42,7 +42,7 @@ Return the generated matrix.
 
 **Example 2:**
 
-<img src="../static/image/2373ex2.png" alt="2373ex1">
+<img src="../static/image/2373ex2.png" width="50%" height="50%" alt="2373ex2">
 
     Input: grid = [[1,1,1,1,1],[1,1,1,1,1],[1,1,2,1,1],[1,1,1,1,1],[1,1,1,1,1]]
     Output: [[2,2,2],[2,2,2],[2,2,2]]
