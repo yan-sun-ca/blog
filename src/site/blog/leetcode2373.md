@@ -31,7 +31,7 @@ Return the generated matrix.
 
 **Example 1:**
 
-<img src="../static/image/2373ex1.png" alt="2373ex1">
+<img src="../static/image/2373ex1.png" width="50%" height="50%" alt="2373ex1">
 
     Input: grid = [[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]
     Output: [[9,9],[8,6]]
