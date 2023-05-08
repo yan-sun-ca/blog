@@ -186,6 +186,7 @@ h5 {
 
 main li {
     list-style: disc;
+    margin-left: 2em;
 }
 
 @media screen and (min-width: 600px) {
