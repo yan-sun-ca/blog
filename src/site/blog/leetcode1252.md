@@ -31,7 +31,7 @@ Given m, n, and indices, return the number of odd-valued cells in the matrix aft
 
 **Example 1:**
 
-<img src="../static/image/1252ex1.png" width="80%" height="80%" alt="1252ex2">
+<img src="../static/image/1252ex1.png" width="50%" height="50%" alt="1252ex2">
 
     Input: m = 2, n = 3, indices = [[0,1],[1,1]]
     Output: 6
@@ -43,7 +43,7 @@ Given m, n, and indices, return the number of odd-valued cells in the matrix aft
 
 **Example 2:**
 
-<img src="../static/image/1252ex2.png" width="80%" height="80%" alt="1252ex2">
+<img src="../static/image/1252ex2.png" width="50%" height="50%" alt="1252ex2">
 
     Input: m = 2, n = 2, indices = [[1,1],[0,0]]
     Output: 0
