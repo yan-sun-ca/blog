@@ -6,5 +6,7 @@ layout: layouts/single-page.njk
 
 ## About Me
 
-Just another Newfoundlander.
+Studying computing engineer in Memorial University of Newfoundland as a graduate student.
+
+
 
