@@ -13,9 +13,6 @@ createdAt: "2023-05-08"
 
 
 
-
-
-
 #### Question
 Given two arrays of integers nums and index. Your task is to create target array under the following rules:
 
