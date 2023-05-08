@@ -49,7 +49,8 @@ Letters are case sensitive, so "a" is considered a different type of stone from 
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p> 
 
 #### Solution
 **Python**
