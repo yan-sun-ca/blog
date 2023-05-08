@@ -2,7 +2,7 @@
 layout: layouts/single-page.njk
 tags: blog
 title: LeetCode 1108. Defanging an IP Address
-permalink: "blog/hello-world.html"
+permalink: "blog/leetcode1108.html"
 createdAt: "2023-04-23"
 ---
 
@@ -10,7 +10,7 @@ createdAt: "2023-04-23"
 #### Question
 Given a valid (IPv4) IP address, return a defanged version of that IP address. 
 
-*A defanged IP address replaces every period "." with "[.]".*
+A defanged IP address replaces every period "." with "[.]".
 <p>&nbsp;</p>
 
 **Example 1:**
@@ -31,10 +31,12 @@ Given a valid (IPv4) IP address, return a defanged version of that IP address.
 
     The given address is a valid IPv4 address.
 
+<p>&nbsp;</p>
+
 ---
   
 
-<p>&nbsp;</p>
+
 
 #### Solution
 **Python**
