@@ -59,7 +59,8 @@ Return names sorted in descending order by the people's heights.
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p>
 
 #### Solution
 **Python**

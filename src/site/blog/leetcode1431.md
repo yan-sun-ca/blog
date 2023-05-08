@@ -64,7 +64,8 @@ Note that multiple kids can have the greatest number of candies.
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p> 
 
 #### Solution
 **Python**

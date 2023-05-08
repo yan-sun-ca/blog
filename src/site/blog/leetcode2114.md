@@ -52,7 +52,8 @@ Return the maximum number of words that appear in a single sentence.
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p>  
 
 #### Solution
 **Python**

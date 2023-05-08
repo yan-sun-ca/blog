@@ -52,6 +52,7 @@ Return the shuffled string.
 
 ---
 
+<p>&nbsp;</p>
 
 #### Solution
 **Python**

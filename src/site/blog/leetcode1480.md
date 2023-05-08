@@ -56,7 +56,8 @@ Return the running sum of nums.
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p> 
 
 #### Solution
 **Python**

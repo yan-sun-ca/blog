@@ -1,7 +1,7 @@
 ---
 layout: layouts/single-page.njk
 tags: blog
-title: LeetCode 21859. Sorting the Sentence
+title: LeetCode 1859. Sorting the Sentence
 
 permalink: "blog/leetcode1859.html"
 createdAt: "2023-05-08"
@@ -53,7 +53,8 @@ Given a shuffled sentence s containing no more than 9 words, reconstruct and ret
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p>  
 
 #### Solution
 **Python**

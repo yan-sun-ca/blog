@@ -49,7 +49,8 @@ Return the minimum possible sum of new1 and new2.
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p>
 
 #### Solution
 **Python**

@@ -58,7 +58,8 @@ Given the string command, return the Goal Parser's interpretation of command.
 <p>&nbsp;</p>
 
 ---
-  
+
+<p>&nbsp;</p>  
 
 #### Solution
 **Python**

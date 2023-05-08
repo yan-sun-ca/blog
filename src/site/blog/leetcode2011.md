@@ -66,6 +66,7 @@ Given an array of strings operations containing a list of operations, return the
 
 ---
 
+<p>&nbsp;</p>
 
 #### Solution
 **Python**
