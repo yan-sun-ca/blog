@@ -33,4 +33,4 @@ diffImage= double(grayImage) - double(grayImage2);
 
 imshow(diffImage, []);
 
-<image src="../static/image/imageprocess1.png" alt="imageprocess1">
+<image src="../static/image/imageprocess1.png" width="50%" height="50%" alt="imageprocess1">
