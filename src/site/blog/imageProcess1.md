@@ -32,3 +32,5 @@ diffImage= double(grayImage) - double(grayImage2);
 % Display it.
 
 imshow(diffImage, []);
+
+<image src="../static/image/imageprocess1.png" alt="imageprocess1">
