@@ -1,7 +1,7 @@
 ---
 layout: layouts/single-page.njk
 tags: blog
-title: Some Notes for Image Processing
+title: Some Notes for Image Processing (1)
 
 
 
@@ -9,14 +9,16 @@ permalink: "blog/imageprocessing01.html"
 createdAt: "2023-05-14"
 ---
 
-## Some Notes for Image Processing
+## Some Notes for Image Processing (1)
 
 
 
 
 
 
-#### Comparing images using subtraction
+#### Comparing images using subtraction (Matlab)
+
+```Matlab
 image = imread('pic.png');
 
 grayImage = rgb2gray(image);
@@ -32,5 +34,7 @@ diffImage= double(grayImage) - double(grayImage2);
 % Display it.
 
 imshow(diffImage, []);
+```
+
 
 <image src="../static/image/imageprocess1.png" width="50%" height="50%" alt="imageprocess1">
