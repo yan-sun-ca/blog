@@ -96,7 +96,7 @@ subplot(2,3,6), imshow(f5),title('parameter: 0.49,0.50');
 
 ```
 
-<image src= "../static/image/imageprocess2_05.png" width="30%" height="30%" alt="imageprocess2_05">
+<image src= "../static/image/imageprocess2_05.png" alt="imageprocess2_05">
 
 
 #### Power-law (Gamma) transformation
@@ -108,7 +108,7 @@ Each input value is raised to the power gamma
 * r < 1 will brighten the image
 * r > 1 will darken the image
 
-<image src= "../static/image/imageprocess2_07.png" width="50%" height="50%" alt="imageprocess2_07">
+<image src= "../static/image/imageprocess2_07.png" width="30%" height="30%" alt="imageprocess2_07">
 
 **Matlab Code**
 ```Matlab
@@ -152,4 +152,4 @@ subplot(2,3,6), imshow(f5),title('parameter: 0.5');
 
 ```
 
-<image src= "../static/image/imageprocess2_08.png" width="50%" height="50%" alt="imageprocess2_08">
+<image src= "../static/image/imageprocess2_08.png" alt="imageprocess2_08">
