@@ -96,7 +96,7 @@ subplot(2,3,6), imshow(f5),title('parameter: 0.49,0.50');
 
 ```
 
-<image src= "../static/image/imageprocess2_05.png" alt="imageprocess2_05">
+<image src= "../static/image/imageprocess2_05.png" width="70%" height="70%" alt="imageprocess2_05">
 
 
 #### Power-law (Gamma) transformation
@@ -152,4 +152,4 @@ subplot(2,3,6), imshow(f5),title('parameter: 0.5');
 
 ```
 
-<image src= "../static/image/imageprocess2_08.png" alt="imageprocess2_08">
+<image src= "../static/image/imageprocess2_08.png" width="70%" height="70%" alt="imageprocess2_08">
