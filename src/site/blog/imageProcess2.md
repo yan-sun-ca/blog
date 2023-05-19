@@ -21,6 +21,7 @@ s = r
 
 <image src= "../static/image/imageprocess2_01.png" width="30%" height="30%" alt="imageprocess2_01">
 
+<p>&nbsp;</p> 
 
 #### Image Negative 
 
@@ -54,7 +55,7 @@ figure, imshow(f_neg,[]);
 
 <image src= "../static/image/imageprocess2_04.png" width="30%" height="30%" alt="imageprocess2_04">
 
-
+<p>&nbsp;</p> 
 
 #### Contrast Stretching
 Producing an image with higher contrast by darkening the intensity levels below k and brightening the levels above k
@@ -98,6 +99,7 @@ subplot(2,3,6), imshow(f5),title('parameter: 0.49,0.50');
 
 <image src= "../static/image/imageprocess2_05.png" width="70%" height="70%" alt="imageprocess2_05">
 
+<p>&nbsp;</p> 
 
 #### Power-law (Gamma) transformation
 
@@ -153,3 +155,114 @@ subplot(2,3,6), imshow(f5),title('parameter: 0.5');
 ```
 
 <image src= "../static/image/imageprocess2_08.png" width="70%" height="70%" alt="imageprocess2_08">
+
+
+<p>&nbsp;</p> 
+
+#### Bit-plane Slicing
+Pixel intensity is represented by bits, and a 256-level grayscale image is represented by 8 bits.
+
+* The higher-order bit planes (e.g., 8-6) contain the majority significant data.
+* The lower-order bit planes (e.g., 3-1) contribute to more subtle intensity details.
+
+**Matlab Code**
+```Matlab
+clear all; close all;
+
+f = imread('bg_old.jpg');
+
+clear all; close all;
+
+image = imread('bg_old.jpg'); % convert colourful image to gray image
+
+f = im2gray(image);
+
+% gets bit plane 
+
+f1 = bitget(f,1); 
+
+f2 = bitget(f,2); 
+
+f3 = bitget(f,3); 
+
+f4 = bitget(f,4); 
+
+f5 = bitget(f,5); 
+
+f6 = bitget(f,6); 
+
+f7 = bitget(f,7); 
+
+f8 = bitget(f,8); 
+
+subplot(3,3,1),imshow(f),title('original image');
+
+subplot(3,3,2),imshow(logical(f1)),title('bit plane 1');
+
+subplot(3,3,3),imshow(logical(f2)),title('bit plane 2');
+
+subplot(3,3,4),imshow(logical(f3)),title('bit plane 3');
+
+subplot(3,3,5),imshow(logical(f4)),title('bit plane 4');
+
+subplot(3,3,6),imshow(logical(f5)),title('bit plane 5');
+
+subplot(3,3,7),imshow(logical(f6)),title('bit plane 6');
+
+subplot(3,3,8),imshow(logical(f7)),title('bit plane 7');
+
+subplot(3,3,9),imshow(logical(f8)),title('bit plane 8');
+
+```
+
+<image src= "../static/image/imageprocess2_09.png" width="70%" height="70%" alt="imageprocess2_09">
+
+From the result, we can see that if only use bit plane 1, it's hard to recognize the image. However, with only bit plane 8, it can recognize something.
+
+Let's try another code. Let's compare the following conditions:
+* Only using bit plane 8
+* Using bit plane 8 and 7
+* Using bit plane 8, 7, and 6
+
+**Matlab Code**
+```Matlab
+
+clear all; close all;
+
+image = imread('bg_old.jpg');
+
+f = im2gray(image); % convert colourful image to gray image
+
+f1 = zeros(size(f)); % create blank image with the same size of original image
+
+f2 = zeros(size(f));
+
+f3 = zeros(size(f));
+
+% set bit, f1 only uses bit plane 8, f2 uses bit plane 8,7, f3 uses bit plane 8,7,6
+
+f1 = bitset(f1,8,bitget(f,8));
+
+f2 = bitset(f2,8,bitget(f,8));
+
+f2 = bitset(f2,7,bitget(f,7));
+
+f3 = bitset(f3,8,bitget(f,8));
+
+f3 = bitset(f3,7,bitget(f,7));
+
+f3 = bitset(f3,6,bitget(f,6));
+
+f1 = uint8(f1); f2 = uint8(f2); f3 = uint8(f3); 
+
+subplot(2,2,1),imshow(f),title('original image');
+
+subplot(2,2,2),imshow(f1),title('using bit plane 8');
+
+subplot(2,2,3),imshow(f2),title('using bit plane 8, and 7');
+
+subplot(2,2,4),imshow(f3),title('using bit plane 8, 7, and 6');
+
+```
+
+<image src= "../static/image/imageprocess2_10.png" width="70%" height="70%" alt="imageprocess2_10">
