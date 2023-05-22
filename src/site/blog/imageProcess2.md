@@ -219,6 +219,8 @@ subplot(3,3,9),imshow(logical(f8)),title('bit plane 8');
 
 From the result, we can see that if only use bit plane 1, it's hard to recognize the image. However, with only bit plane 8, it can recognize something.
 
+<p>&nbsp;</p> 
+
 Let's try another code. Let's compare the following conditions:
 * Only using bit plane 8
 * Using bit plane 8 and 7
@@ -266,3 +268,33 @@ subplot(2,2,4),imshow(f3),title('using bit plane 8, 7, and 6');
 ```
 
 <image src= "../static/image/imageprocess2_10.png" width="70%" height="70%" alt="imageprocess2_10">
+
+<p>&nbsp;</p> 
+
+It shows that with more bit planes, the image is more clear and close to the original image.
+
+<p>&nbsp;</p> 
+
+#### Histogram Equalization
+
+* A method for modifying (enhancing) the dynamic range and the conteast of an image
+
+
+**Matlab Code**
+```Matlab
+clear all; close all;
+f = imread('satellite.png');
+f1 = imadjust(f, stretchlim(f),[]);
+f2=histeq(f);
+subplot(2,3,1),imshow(f);
+subplot(2,3,1),imshow(f), title('original image');
+subplot(2,3,2),imshow(f1), title('contrast stretching');
+subplot(2,3,3),imshow(f2), title('histogram equalization');
+subplot(2,3,4),imhist(f), title('original histogram');
+subplot(2,3,5),imhist(f1), title('contrast histogram');
+subplot(2,3,6),imhist(f2),title('hist-eq histogram');
+```
+
+<p>&nbsp;</p> 
+
+<image src= "../static/image/imageprocess2_11.png" width="70%" height="70%" alt="imageprocess2_11">
