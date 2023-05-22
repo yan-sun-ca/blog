@@ -283,15 +283,25 @@ It shows that with more bit planes, the image is more clear and close to the ori
 **Matlab Code**
 ```Matlab
 clear all; close all;
+
 f = imread('satellite.png');
+
 f1 = imadjust(f, stretchlim(f),[]);
+
 f2=histeq(f);
+
 subplot(2,3,1),imshow(f);
+
 subplot(2,3,1),imshow(f), title('original image');
+
 subplot(2,3,2),imshow(f1), title('contrast stretching');
+
 subplot(2,3,3),imshow(f2), title('histogram equalization');
+
 subplot(2,3,4),imhist(f), title('original histogram');
+
 subplot(2,3,5),imhist(f1), title('contrast histogram');
+
 subplot(2,3,6),imhist(f2),title('hist-eq histogram');
 ```
 
